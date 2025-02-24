@@ -1,1 +1,46 @@
 /* write your override styles here */
+/* Removing all graffiti from the wall */
+#wall .tag-1, 
+#wall .tag-2, 
+#wall .tag-3, 
+#wall .tag-4, 
+#wall .tag-5, 
+#wall .tag-6, 
+#wall .tag-7, 
+#wall .tag-8, 
+#wall .tag-9, 
+#wall .tag-10 {
+  display: none; /* Hides graffiti elements */
+  visibility: hidden; /* Ensures they are not visible */
+  opacity: 0; /* Makes them fully transparent */
+  height: 0; /* Removes any space they take */
+  width: 0;
+}
+
+/* Additional cleanup */
+#wall .poster, 
+#wall .sticker, 
+#wall .scribble {
+  display: none; /* Hiding any additional unwanted elements */
+}
+
+/* Ensuring the wall background remains intact */
+#wall {
+  background-color: #ddd; /* Light grey background for a clean look */
+  border: 2px solid #aaa; /* Adding a slight border */
+  min-height: 500px; /* Ensuring proper wall height */
+}
+
+/* Overriding previous graffiti styles */
+#wall .tag-1 { background: none; }
+#wall .tag-2 { background: none; }
+#wall .tag-3 { background: none; }
+#wall .tag-4 { background: none; }
+#wall .tag-5 { background: none; }
+#wall .tag-6 { background: none; }
+#wall .tag-7 { background: none; }
+#wall .tag-8 { background: none; }
+#wall .tag-9 { background: none; }
+#wall .tag-10 { background: none; }
+
+/* Comment for additional byte increase */
